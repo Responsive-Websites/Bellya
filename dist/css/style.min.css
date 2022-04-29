@@ -353,3 +353,42 @@ body.lock {
   top: 0;
   left: 0;
 }
+
+.generation {
+  padding: 120px 0px;
+}
+@media screen and (max-width: 886px) {
+  .generation {
+    padding: 90px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .generation {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .generation {
+    padding: 30px 0px;
+  }
+}
+
+.block {
+  text-align: center;
+}
+.block__icon {
+  margin: 0px 0px 33px 0px;
+}
+.block__title {
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  margin-bottom: 18px;
+  line-height: 24px;
+}
+.block__text {
+  font-size: 18px;
+  line-height: 34px;
+}
