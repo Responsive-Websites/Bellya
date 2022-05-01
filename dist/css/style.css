@@ -652,3 +652,72 @@ body.lock {
   text-transform: uppercase;
   background-color: #64c29e;
 }
+
+.footer {
+  background-color: #cfcbcb;
+  padding: 100px 0px;
+}
+@media screen and (max-width: 1100px) {
+  .footer {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 30px 0px;
+  }
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .footer__row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.footer__column {
+  flex: 0 1 33.333%;
+}
+.footer__address {
+  padding: 0px 20px 0px 0px;
+  color: #848789;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer__address p:first-child {
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .footer__address {
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__social {
+    margin: 15px 0px;
+  }
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__link {
+  margin: 0px 7.5px;
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.dev__text {
+  color: #848789;
+  font-size: 14px;
+  font-style: italic;
+}
+.dev__icon {
+  margin-left: 9px;
+}
