@@ -124,7 +124,7 @@ body.lock {
 }
 
 .ibg {
-  background-position: right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -354,4 +354,134 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.vintage__row {
+  display: flex;
+}
+@media screen and (max-width: 1428px) {
+  .vintage__row {
+    flex-direction: column;
+  }
+}
+.vintage__column {
+  flex: 0 1 33.333%;
+}
+.vintage__column_big {
+  flex: 0 1 66.666%;
+}
+.vintage__image {
+  padding-bottom: 33%;
+}
+
+.item {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.item__icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgba(127, 252, 210, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.item__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.item:hover .item__icon {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 1428px) {
+  .item {
+    padding-bottom: 33%;
+  }
+}
+
+.content {
+  padding: 50px;
+}
+.content__header {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.content__text {
+  font-size: 18px;
+}
+.content__text:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: rgb(182, 178, 178);
+  margin: 30px auto 0px auto;
+}
+
+.shop__body {
+  display: flex;
+}
+.shop__column {
+  flex: 0 1 16.666%;
+}
+.shop__column_big {
+  flex: 0 1 33.333%;
+}
+.block-shop {
+  height: 100%;
+}
+.block-shop__row {
+  display: flex;
+}
+.block-shop__column {
+  flex: 0 1 50%;
+}
+.block-shop__item {
+  height: auto;
+  padding-bottom: 50%;
+}
+.block-shop__item_big {
+  padding-bottom: 200%;
+}
+.block-shop__item_l {
+  padding-bottom: 100%;
+}
+
+.gallery__body {
+  display: flex;
+}
+.gallery__column {
+  flex: 0 1 16.666%;
+}
+.gallery__column_big {
+  flex: 0 1 33.333%;
+}
+.block-gallery__row {
+  display: flex;
+}
+.block-gallery__column {
+  flex: 0 1 50%;
+}
+.block-gallery__item {
+  height: auto;
+  padding-bottom: 50%;
+}
+.block-gallery__item_l {
+  padding-bottom: 100%;
+}
+.block-gallery__item_big {
+  padding-bottom: 200%;
 }
