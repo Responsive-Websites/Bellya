@@ -9,10 +9,11 @@
   flex-flow: column nowrap;
   &__main-screen {
   }
-
   &__generation {
   }
   &__vintage {
+  }
+  &__boriosa {
   }
 }
 
@@ -79,11 +80,25 @@
 
 //======= content =========//
 .content {
+  padding: 70px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 40px;
+  }
+  @media screen and (max-width: 481px) {
+    padding: 30px;
+  }
   &__icon {
     text-align: center;
     margin-bottom: 30px;
     @media screen and (max-width: 768px) {
       margin-bottom: 26px;
+    }
+    @media screen and (max-width: 481px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -101,19 +116,26 @@
       font-size: 17px;
       margin-bottom: 16px;
     }
+
+    @media screen and (max-width: 481px) {
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
     font-size: 16px;
     line-height: 26px;
     text-align: justify;
+
+    @media screen and (max-width: 481px) {
+      font-size: 15px;
+    }
   }
 }
 
 //======= Vintage ========//
 .vintage {
   &__body {
-    display: flex;
   }
 
   &__column {
@@ -124,7 +146,6 @@
   }
 
   &__content {
-    padding: 70px;
   }
 
   &__image {
@@ -134,6 +155,7 @@
 
 //======== big column ========//
 .column {
+  flex: 0 1 33.333%;
   &_big {
     flex: 0 1 66.666%;
   }
@@ -165,12 +187,48 @@
     left: 0;
     height: 100%;
     width: 100%;
+
+    @media screen and (max-width: 1386px) {
+      position: static;
+
+      height: auto;
+      width: auto;
+      padding-bottom: 50%;
+    }
   }
 
   &:hover {
     .item__logo {
       opacity: 1;
       visibility: visible;
+    }
+  }
+}
+
+//===================== Body-flex mod ====================//
+.body_flex {
+  display: flex;
+
+  @media screen and (max-width: 1386px) {
+    flex-direction: column;
+  }
+}
+//========================================================//
+
+//================= deleted image mod ====================//
+
+.image_remove {
+  display: none;
+}
+
+//========================================================//
+.boriosa {
+  &__image {
+    padding-bottom: 37.52%;
+  }
+  @media screen and (max-width: 1386px) {
+    &__body {
+      flex-direction: column-reverse;
     }
   }
 }
