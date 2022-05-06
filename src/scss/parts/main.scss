@@ -12,6 +12,8 @@
 
   &__generation {
   }
+  &__vintage {
+  }
 }
 
 .main-screen {
@@ -42,11 +44,44 @@
   @media screen and (max-width: 481px) {
     padding: 30px 0px;
   }
+
+  &__icon {
+    text-align: center;
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 26px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 0px 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
 }
+
+//======= content =========//
 .content {
   &__icon {
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     @media screen and (max-width: 768px) {
       margin-bottom: 26px;
     }
@@ -54,7 +89,7 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -69,13 +104,73 @@
   }
 
   &__text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
   }
-  &__text_generation {
-    font-size: 18px;
-    text-align: center;
-    line-height: 30px;
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
+}
+
+//======= Vintage ========//
+.vintage {
+  &__body {
+    display: flex;
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+  }
+
+  &__item {
+  }
+
+  &__content {
+    padding: 70px;
+  }
+
+  &__image {
+    padding-bottom: 35%;
+  }
+}
+
+//======== big column ========//
+.column {
+  &_big {
+    flex: 0 1 66.666%;
+  }
+}
+
+.item {
+  display: block;
+  height: 100%;
+  position: relative;
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 223, 188, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    .item__logo {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
