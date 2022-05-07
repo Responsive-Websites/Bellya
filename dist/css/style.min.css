@@ -742,6 +742,21 @@ body.lock {
   text-align: center;
   padding: 110px 0px;
 }
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding: 90px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 60px 0px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .contact {
+    padding: 40px 0px;
+  }
+}
 .contact__logo {
   max-width: 100px;
   margin: 0 auto;
@@ -762,6 +777,11 @@ body.lock {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 551px) {
+  .contact__form {
+    flex-wrap: wrap;
+  }
+}
 .contact__form input {
   padding: 26px;
   max-width: 400px;
@@ -770,8 +790,31 @@ body.lock {
   color: #929292;
   font-style: italic;
 }
+@media screen and (max-width: 551px) {
+  .contact__form input {
+    max-width: none;
+    width: 100%;
+    margin: 0px 10px 10px 10px;
+  }
+}
 .contact__form button {
-  color: #ffffff;
+  text-transform: uppercase;
+  color: #f7f7f7;
   background-color: #64c29e;
-  height: 100%;
+  font-size: 24px;
+  padding: 23.5px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+.contact__form button:hover {
+  background-color: #282f35;
+}
+@media screen and (max-width: 551px) {
+  .contact__form button {
+    max-width: none;
+    width: 100%;
+    margin: 0px 10px 0px 10px;
+  }
 }

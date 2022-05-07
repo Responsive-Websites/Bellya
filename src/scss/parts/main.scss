@@ -432,6 +432,16 @@
 .contact {
   text-align: center;
   padding: 110px 0px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 90px 0px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 60px 0px;
+  }
+  @media screen and (max-width: 481px) {
+    padding: 40px 0px;
+  }
   &__logo {
     max-width: 100px;
     margin: 0 auto;
@@ -453,6 +463,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 551px) {
+      flex-wrap: wrap;
+    }
     & input {
       padding: 26px;
       max-width: 400px;
@@ -460,12 +473,31 @@
       font-size: 20px;
       color: #929292;
       font-style: italic;
+      @media screen and (max-width: 551px) {
+        max-width: none;
+        width: 100%;
+        margin: 0px 10px 10px 10px;
+      }
     }
-
     & button {
-      color: #ffffff;
+      text-transform: uppercase;
+      color: #f7f7f7;
       background-color: #64c29e;
-      height: 100%;
+      font-size: 24px;
+      padding: 23.5px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        background-color: #282f35;
+      }
+      @media screen and (max-width: 551px) {
+        max-width: none;
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+      }
     }
   }
 }
