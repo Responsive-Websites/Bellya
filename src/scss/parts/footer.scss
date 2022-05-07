@@ -1,0 +1,79 @@
+.footer {
+  padding: 50px 0px;
+  background-color: #eeeeee;
+
+  @media screen and (max-width: 565px) {
+    padding: 30px 0px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__contacts {
+    flex: 0 1 33%;
+    @media screen and (max-width: 768px) {
+      order: 1;
+      flex: 0 1 50%;
+    }
+    @media screen and (max-width: 565px) {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    flex: 0 1 33%;
+    text-align: center;
+    & img {
+      margin: 0px 7px;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      order: 3;
+      flex: 0 1 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__logo {
+    flex: 0 1 33%;
+    text-align: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & span {
+      margin-right: 8px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    @media screen and (max-width: 768px) {
+      order: 2;
+      flex: 0 1 50%;
+    }
+    @media screen and (max-width: 565px) {
+      flex: 1 1 100%;
+      text-align: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+}
+.contacts {
+  font-size: 14px;
+  &__city {
+    margin-bottom: 5px;
+  }
+
+  &__address {
+    margin-bottom: 5px;
+  }
+
+  &__email {
+  }
+}
